@@ -29,9 +29,8 @@ int main() {
 						scanf("%s",&choice3);
 						break;
 					case 2:	
-						AddCategory(CategoryCount,CategoryList);
+						AddCategory(&CategoryCount,CategoryList);
 						scanf("%s",&choice3);		
-						CategoryCount++; 
 						break;
 					case 3:
 						ChangeCategory(CategoryCount,CategoryList);
@@ -55,8 +54,24 @@ int main() {
 						status = 0; 
 						ShowMain();
 						break; 
+					default:
+						status = 0;
+						ShowMain();
+						break;
 					}
 				break; 
+			case 2:
+				ShowProduct();
+				status = 2;
+				printf("Enter your choice: ");
+				scanf("%d",&choice2);
+				break;
+			case 3:
+				ShowOrder();
+				status = 3;
+				printf("Enter your choice: ");
+				scanf("%d",&choice2);
+				break;
 			case 0:
 				system("cls"); 
 				printf("==========Thank you==========\n");
