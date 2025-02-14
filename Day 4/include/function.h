@@ -10,7 +10,7 @@ void ShowCategory();
 void ShowCategoryList(int a,Category CategoryList[]);
 
 // ham them vao mot danh muc moi
-void AddCategory(int a,Category CategoryList[]);
+void AddCategory(int *a,Category CategoryList[]);
 
 // ham sua doi mot danh muc
 void ChangeCategory(int a,Category CategoryList[]); 
