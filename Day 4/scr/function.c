@@ -104,8 +104,7 @@ void ShowCategoryList(int a, Category CategoryList[]){
             }
             printf("| %-4s | %-26s |\n", CategoryList[i].CategoryId, CategoryList[i].CategoryName);
             printf("+------+----------------------------+\n");
-        }
-        
+	}
     }
 }
 
@@ -138,8 +137,7 @@ void ChangeCategory(int a,Category CategoryList[]){
 void DeleteCategory(int a, Category CategoryList[]){
     system("color 2");
     system("cls"); 
-    printf("* * * Store Management System Using * * *\n\n");
-    
+    printf("* * * Store Management System Using * * *\n\n");    
     char index[10];
     int confirm;
     printf("Type Category Id to delete: ");
@@ -164,12 +162,10 @@ void DeleteCategory(int a, Category CategoryList[]){
             }
         }
     }
-    
     if (!found) {
         printf("Unable to find mentioned Id.\n");
         printf("Press any key to go back: "); 
     }
-    
     return;
 }
 
