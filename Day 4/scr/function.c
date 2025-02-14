@@ -253,10 +253,10 @@ void FindCategory(int a,Category CategoryList[]){
             if (!found){
                 printf("Categories that mentioned %s: \n", name);
             }
-            if (CategoryList[i].CategoryId[strlen(CategoryList[i].CategoryId) - 1] == '\n') {
+            if (CategoryList[i].CategoryId[strlen(CategoryList[i].CategoryId) - 1] == '\n'){
                 CategoryList[i].CategoryId[strlen(CategoryList[i].CategoryId) - 1] = '\0';
             }
-            if (CategoryList[i].CategoryName[strlen(CategoryList[i].CategoryName) - 1] == '\n') {
+            if (CategoryList[i].CategoryName[strlen(CategoryList[i].CategoryName) - 1] == '\n'){
                 CategoryList[i].CategoryName[strlen(CategoryList[i].CategoryName) - 1] = '\0';
             }
             printf("+------+----------------------------+\n");
@@ -266,7 +266,7 @@ void FindCategory(int a,Category CategoryList[]){
     }
     if (!found){
         printf("Unable to find mentioned name.\n");
-    } else {
+    } else{
         printf("+------+----------------------------+\n");
     }
     printf("Press any key to go back: ");
