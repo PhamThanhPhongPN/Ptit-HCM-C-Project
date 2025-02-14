@@ -58,9 +58,9 @@ void AddCategory(int a,Category CategoryList[]){
 	printf("Type the category Name: ");
 	fgets(name,100,stdin);
 	size_t len = strlen(CategoryList[a].CategoryName);
-    if (len > 0 && CategoryList[a].CategoryName[len - 1] == '\n') {
-        CategoryList[a].CategoryName[len - 1] = '\0';
-    }
+        if (len > 0 && CategoryList[a].CategoryName[len - 1] == '\n') {
+        	CategoryList[a].CategoryName[len - 1] = '\0';
+        }
 	if (strlen(CategoryList[a].CategoryId) > 10){
 		printf("Lenght of Id is not appropriate.\n");
 		printf("Press any key to go back: ");
